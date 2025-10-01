@@ -529,4 +529,60 @@ address {
 .footer-link:focus {
   background-color: #31d0aa;
 }
+.subscribe-wrapper {
+  margin-left: 80px;
+}
+.subscribe-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.subscribe-input {
+  background-color: transparent;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-right: 23px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:focus {
+  outline: none;
+  border-color: #4d5ae5;
+}
+
+.subscribe-btn {
+  position: relative;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  background-color: var(--iris);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: start;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn-icon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  fill: #2e2f42;
+}
+.subscribe-btn:hover {
+  background-color: var(--ocean);
+}
+
 /* #endregion FOOTER */
