@@ -532,9 +532,9 @@ address {
 .subscribe-wrapper {
   margin-left: 80px;
 }
-.modal-form {
+.subscribe-form {
   display: flex;
-  flex-direction: column;
+  gap: 24px;
 }
 .subscribe-desc {
   font-weight: 500;
@@ -679,9 +679,9 @@ address {
   text-align: center;
   color: #2e2f42;
 }
-.chekbox-wrapper {
+/* .chekbox-wrapper {
   display: flex;
-}
+} */
 
 .modal-input-wrap {
   /* position: relative; */
@@ -737,6 +737,14 @@ address {
   transform: translateY(-50%);
   fill: var(--navy-blue);
 }
+.modal-checkbox-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
 .modal-text-area {
   width: 100%;
   height: 120px;
@@ -746,13 +754,19 @@ address {
   padding: 8px 16px;
   resize: none;
   display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .modal-text-area::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -771,7 +785,9 @@ address {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-
+.modal-form:last-child .modal-input-wrap {
+  margin-bottom: 16px;
+}
 .modal-checkbox-btn {
   margin-top: 24px;
   display: block;
@@ -806,19 +822,15 @@ address {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
 }
 
-.modal-checkbox:checked + .modal-checkbox-label + .custom-checkbox {
-  fill: #f4f4fd;
+.modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
   background-color: #404bbf;
   border: 1px solid #404bbf;
-}
-.checkbox-wrapper-form {
-  display: flex;
-  gap: 8px;
-}
-.icon-vector {
-  fill: #404bbf;
   stroke: #4d5ae5;
+}
+.checkbox-icon {
+  fill: #f4f4fd;
 }
 /* #endregion MODAL */
