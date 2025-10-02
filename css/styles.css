@@ -687,7 +687,12 @@ address {
   /* position: relative; */
   margin-bottom: 8px;
 }
-
+.modal-input-wrap-comment {
+  margin-bottom: 16px;
+}
+.chekbox-wrapper {
+  margin-bottom: 24px;
+}
 .modal-label {
   display: block;
   font-weight: 400;
