@@ -8,11 +8,12 @@
 }
 /* Done */
 .hero-section,
-.benefits-section {
+.benefits-section,
+.our-team-section {
   display: none;
 }
 /* end DONE */
-.portfolio-section,
+
 .footer-section {
   display: none;
 }
@@ -632,17 +633,43 @@ address {
   text-align: center;
   text-transform: capitalize;
 }
+
 .portfolio-section-wrap {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-section-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    /* row-gap: 48px; */
+    row-gap: 64px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio-section-wrap {
+    row-gap: 48px;
+  }
 }
 .portfolio-section-wrap-list {
-  width: calc((100% - 24px * 2) / 3);
+  width: 100%;
   position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 768px) {
+  .portfolio-section-wrap-list {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio-section-wrap-list {
+    width: calc((100% - 24px * 2) / 3);
+  }
+}
+
 .portfolio-section-wrap-list:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
